@@ -40,6 +40,7 @@
             "description": "简单易懂的Jade入门资料",
             "author": "Terry Nie",
             "site_url": "http://jade.terrynie.com",
+            "feed_url": "https://github.com/terrynie/JadeCookBook/issues",
             "managingEditor": "88@terrynie.com (Terry Nie)",
             "webMaster": "88@terrynie.com (Terry Nie)",
             "categories": [
