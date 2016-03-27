@@ -45,6 +45,6 @@ hello.html
 
 在第四行中，在`title`标签后是`Hello Jade`，这就是`title`的内容。
 
-第五行的`body`标签在缩进上是和`head`同级的，所以他们在`DOM树`中应该也是同级的，所以在`head`
+第五行的`body`标签在缩进上是和`head`同级的，所以他们在`DOM树`中应该也是同级的，所以在`<head>`同级的地方生成的`<body></body>`。
 
 
