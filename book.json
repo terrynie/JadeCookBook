@@ -7,8 +7,7 @@
         "emphasize",
         "-highlight",
         "github",
-        "ga",
-        "editlink"
+        "ga"
     ],
     "pluginsConfig": {
         "duoshuo": {
@@ -27,14 +26,6 @@
         },
         "ga": {
             "token": "UA-75642672-1"
-        },
-        "editlink": {
-            "base": "https://github.com/terrynie/JadeCookBook/blob/master/",
-            "label": {
-                "en": "Edit This Page",
-                "zh-cn": "编辑本页"
-            },
-            "multilingual": true
         }
      }
 }
