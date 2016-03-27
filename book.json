@@ -1,7 +1,7 @@
 {
     "plugins": [
         "exercises",
-        "prism",
+        "-prism",
         "github-buttons",
         "duoshuo"
     ],
