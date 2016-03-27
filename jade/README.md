@@ -47,4 +47,8 @@ hello.html
 
 第五行的`body`标签在缩进上是和`head`同级的，所以他们在`DOM树`中应该也是同级的，所以在`<head>`同级的地方生成的`<body></body>`。
 
+最后一行是一个`h1`标签，后边的"Welcome To Jade Cook Book For Chinese"是`h1`的文本。
+
+这就是使用Jade模板生成的一个最简单的HTML5页面，还是十分简单的。
+
 
