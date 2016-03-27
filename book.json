@@ -5,5 +5,10 @@
         "github-buttons",
         "duoshuo"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+        "duoshuo": {
+            "short_name": "jadeterry.duoshuo.com",
+            "theme": "default"
+        }
+    }
 }
