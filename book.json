@@ -1,7 +1,8 @@
 {
     "plugins": [
         "exercises",
-        "prism"
+        "prism",
+        "github-buttons"
     ],
     "pluginsConfig": {}
 }
