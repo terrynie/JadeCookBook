@@ -7,7 +7,8 @@
         "emphasize",
         "-highlight",
         "github",
-        "ga"
+        "ga",
+        "tbfed-pagefooter"
     ],
     "pluginsConfig": {
         "duoshuo": {
@@ -27,6 +28,11 @@
         },
         "ga": {
             "token": "UA-75642672-1"
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy <a href="http://terrynie.com">terrynie.com</a> 2015",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
      }
 }
