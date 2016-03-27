@@ -11,7 +11,7 @@
     ],
     "pluginsConfig": {
         "duoshuo": {
-            "short_name": "jadeterry.duoshuo.com",
+            "short_name": "jadeterry",
             "theme": "default"
         },
         "github-buttons": {
