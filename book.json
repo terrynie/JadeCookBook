@@ -18,6 +18,7 @@
             "repo": "terrynie/JadeCookBook",
             "types": [
                 "star",
+                "fork",
                 "watch"
             ]
         },
