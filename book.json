@@ -3,7 +3,8 @@
         "exercises",
         "prism",
         "github-buttons",
-        "duoshuo"
+        "duoshuo",
+        "emphasize"
     ],
     "pluginsConfig": {}
 }
