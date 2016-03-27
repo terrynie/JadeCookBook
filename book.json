@@ -5,12 +5,27 @@
         "github-buttons",
         "duoshuo",
         "emphasize",
-        "-highlight"
+        "-highlight",
+        "github",
+        "baidu"
     ],
     "pluginsConfig": {
         "duoshuo": {
             "short_name": "jadeterry.duoshuo.com",
             "theme": "default"
+        },
+        "github-buttons": {
+            "repo": "terrynie/JadeCookBook",
+            "types": [
+                "star",
+                "watch"
+            ]
+        },
+        "github": {
+            "url": "https://github.com/terrynie/JadeCookBook"
+        },
+        "baidu": {
+            "token": "d9d5db6f479d1cd0fdbe0c00b5f4c786"
         }
-    }
+     }
 }
