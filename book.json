@@ -2,9 +2,36 @@
     "plugins": [
         "exercises",
         "prism",
-        "-highlight"
+        "-highlight",
+        "github-buttons",
+        "duoshuo",
+        "github",
+        "ga",
+        "tbfed-pagefooter"
     ],
     "pluginsConfig": {
-        
+        "github-buttons": {
+            "repo": "terrynie/JadeCookBook",
+            "types": [
+                "star",
+                "fork",
+                "watch"
+            ]
+        },
+        "duoshuo": {
+            "short_name": "jadeterry",
+            "theme": "default"
+        },
+        "github": {
+            "url": "https://github.com/terrynie/JadeCookBook"
+        },
+        "ga": {
+            "token": "UA-75642672-1"
+        },
+        "tbfed-pagefooter": {
+            "copyright": "Copyright &copy terrynie.com 2016",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        }
     }
 }
