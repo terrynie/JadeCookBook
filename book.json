@@ -2,52 +2,9 @@
     "plugins": [
         "exercises",
         "prism",
-        "github-buttons",
-        "duoshuo",
-        "emphasize",
-        "-highlight",
-        "github",
-        "ga",
-        "tbfed-pagefooter",
-        "rss"
+        "-highlight"
     ],
     "pluginsConfig": {
-        "github-buttons": {
-            "repo": "terrynie/JadeCookBook",
-            "types": [
-                "star",
-                "fork",
-                "watch"
-            ]
-        },
-        "duoshuo": {
-            "short_name": "jadeterry",
-            "theme": "default"
-        },
-        "github": {
-            "url": "https://github.com/terrynie/JadeCookBook"
-        },
-        "ga": {
-            "token": "UA-75642672-1"
-        },
-        "tbfed-pagefooter": {
-            "copyright": "Copyright &copy terrynie.com 2016",
-            "modify_label": "该文件修订时间：",
-            "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "rss": {
-            "title": "Jade小书",
-            "description": "简单易懂的Jade入门资料",
-            "author": "Terry Nie",
-            "site_url": "http://jade.terrynie.com",
-            "feed_url": "http://jade.terrynie.com",
-            "managingEditor": "88@terrynie.com (Terry Nie)",
-            "webMaster": "88@terrynie.com (Terry Nie)",
-            "categories": [
-              "jade",
-              "book",
-              "gitbook"
-            ]
-         }
+        
     }
 }
