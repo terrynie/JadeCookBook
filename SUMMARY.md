@@ -7,6 +7,7 @@
    * [标签-Tag](jade/biao_qian_tag.md)
    * [属性-Attributes](attributes.md)
    * [插入](jade/cha_ru.md)
+   * Plain Text
 * [Jade进阶](advance.md)
    * [Block](block.md)
    * [Includes](includes.md)
