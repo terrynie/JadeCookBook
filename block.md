@@ -65,5 +65,50 @@ page2.html
   </body>
 </html>
 ```
-很显然，在父模板中block scripts的内容是`<script src="/jquery.js"></script>`，然后我们在page2.jade中使用block append
+很显然，在父模板中block scripts的内容是`<script src="/jquery.js"></script>`，然后我们在page2.jade中使用block append又在原来block后新添加了一个'script'标签，而不是完全覆盖。
+##3.1.3 Block Prepend
+除了可以向3.1.2节一样向Block后边添加新的内容，同样也可以使用block prepend向block内容之前添加内容。
+page3.jade
 
+Jade:
+```jade
+extends ./layout.jade
+
+block prepend scripts
+  script(src='/bootstrap.js')
+```
+HTML:
+```html
+<html>
+  <head>
+    <title>My Site - blog</title>
+    <script src="/bootstrap.js"></script>
+    <script src="/jquery.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+```
+##3.1.4 Block简写
+在使用block append和block prepend时，`block`是可选的，简写形式可将其省略。
+
+Jade:
+```jade
+extends ./layout.jade
+
+prepend scripts
+  script(src='/bootstrap.js')
+```
+HTML:
+```html
+<html>
+  <head>
+    <title>My Site - blog</title>
+    <script src="/bootstrap.js"></script>
+    <script src="/jquery.js"></script>
+  </head>
+  <body>
+  </body>
+</html>
+```
+省略`block`后效果和3.1.3节是一样的。
