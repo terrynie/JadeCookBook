@@ -11,4 +11,5 @@
    * [Block](block.md)
    * Includes
    * Filters
+   * Iteration
 
