@@ -13,5 +13,5 @@
    * [Includes](includes.md)
    * [Filters](filters.md)
    * [Iteration](iteration.md)
-   * Mixin
+   * [Mixin](mixin.md)
 
