@@ -1,4 +1,7 @@
 {
+    "styles":{
+        "website":"styles/website.css"
+    }
     "plugins": [
         "exercises",
         "prism",
