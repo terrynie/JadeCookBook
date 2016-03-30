@@ -12,4 +12,5 @@
    * Includes
    * Filters
    * Iteration
+   * Mixin
 
