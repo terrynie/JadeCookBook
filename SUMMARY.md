@@ -9,4 +9,5 @@
    * [插入](jade/cha_ru.md)
 * [Jade进阶](advance.md)
    * [Block](block.md)
+   * Includes
 
