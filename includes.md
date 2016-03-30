@@ -73,3 +73,34 @@ index.html:
   </body>
 </html>
 ```
+#3.2.3 引入过滤器
+除了上述两种之外，还可以引入过滤器(过滤器会在3.3节中详细讲解)。
+
+inde.jade
+```jade
+doctype html
+html
+  head
+    title An Article
+  body
+    include:markdown article.md
+```
+article.md(markdown文件):
+```
+# article.md
+This is an article written in markdown.
+```
+index.html:
+```html
+<!doctype html>
+<html>
+  <head>
+    <title>An Article</title>
+  </head>
+  <body>
+    <h1>article.md</h1>
+    <p>This is an article written in markdown.</p>
+  </body>
+</html>
+```
+在这里引入了一个markdown文件，因为在markdown中`#`代表`h1`，所以引入后Jade会自动将其转换为`h1`标签。
