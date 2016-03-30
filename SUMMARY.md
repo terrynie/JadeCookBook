@@ -6,7 +6,7 @@
    * [注释](jade/comment.md)
    * [标签-Tag](jade/biao_qian_tag.md)
    * [属性-Attributes](attributes.md)
-   * [插入](jade/cha_ru.md)
+   * [插入-Interpolation](jade/cha_ru.md)
    * [Plain Text](jade/plain_text.md)
 * [Jade进阶](advance.md)
    * [Block](block.md)
