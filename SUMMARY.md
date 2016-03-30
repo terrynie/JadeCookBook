@@ -10,4 +10,5 @@
 * [Jade进阶](advance.md)
    * [Block](block.md)
    * Includes
+   * Filters
 
