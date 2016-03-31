@@ -43,3 +43,25 @@ mixin student(name)
 也就是这样写。这样写效果和使用`#{}`效果相同。
 
 ##3.5.2 Mixin Blocks
+在mixin中还可以包含block，而且可以和参数同时存在。调用包含block的mixin时传入block的方法就是在mixin调用行下缩进即可，当结束block时只需结束当前缩进即可。
+
+mixinBlock.jade:
+```jade
+mixin addTitle(title)
+  h1= title
+  if block
+    block
+  else
+    p no block
++addTitle('Hello world')
++addTitle('Hello world')
+  p this is a block
+```
+mixinBlock.html:
+```html
+<h1>Hello world</h1>
+<p>no block</p>
+<h1>Hello world</h1>
+<p>this is a block</p>
+```
+详细过程来说就是，当第一次调用时我们只传入了参数title，而并没有传入block，所以第一次调用生成的HTML是前两行。当第二次调用时，我们除了
