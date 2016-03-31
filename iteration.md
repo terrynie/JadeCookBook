@@ -52,3 +52,25 @@ each3.html:
   <li>3: three</li>
 </ul>
 ```
+同样，上边的几个例子中的`each`完全可以可以使用`for`来替换，`for`可以被作为`each`的别名来使用。
+
+##3.4.2 while
+除了使用`each`之外还有就是可以使用`while`来循环，用法也很简单。
+
+while.jade:
+```jade
+- var n = 0
+ul
+  while n < 4
+    li= n++
+```
+while.html:
+```html
+<ul>
+  <li>0</li>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+</ul>
+```
+这就是while的用法，和其他语言的使用方法几乎都是一样的。
