@@ -1,5 +1,5 @@
-# 属性-Attributes
-##基本属性
+#2.3 属性-Attributes
+##2.3.1 基本属性
 
 我们在编写HTML文件时，肯定要给HTML标签添加属性，那使用Jade如何实现呢？
 
@@ -33,7 +33,7 @@ input(
   name="username"
 ) //和上边效果一样
 ```
-##非转义属性
+##2.3.2 非转义属性
 为了阻止跨站脚本，在默认情况下所有的属性都会被转义，但是如果你真的需要一些特殊字符，比如：“<”或“>”等，可以使用`!=`替代`=`。
 ```jade
 div(escaped="<code>")
@@ -44,7 +44,7 @@ div(unescaped!="<code>")
 <div escaped="&lt;code&gt;"></div>
 <div escaped="<code>"></div>
 ```
-##布尔属性
+##2.3.3 布尔属性
 Jade可以直接接受`true`和`false`赋值给布尔属性，而且当你缺省赋值时，默认为`true`。
 ```jade
 input(type="checkbox",checked)
@@ -57,7 +57,7 @@ input(type="checkbox",checked="false")
 <input type="checkbox" checked>
 <input type="checkbox">
 ```
-##样式属性
+##2.3.4 样式属性
 在之前的属性中每个属性只有一个值，但在style属性中会有多个值，比如：`<p style="color:red;font-size:17px;"></p>`，这个该怎么办呢？<br>其实很简单，既然Jade支持JavaScript语法赋值，那我们是不是可以把style属性的值看做是一个JavaScript对象呢(也可以称为字典)？答案是：当然可以喽！
 ```jade
 p(style={color:red,font-size:17px})
@@ -66,7 +66,7 @@ HTML代码对应为：
 ```html
 <p style="color:red;font-size:17px;"></p>
 ```
-##字面量声明class属性和id属性
+##2.3.5 字面量声明class属性和id属性
 当使用字面量声明class和id属性时，Jade支持使用CSS的类选择器和id选择器的方式，这也是最简单的方法。
 ```jade
 a.commit
@@ -92,4 +92,17 @@ a(class=classes)
 生成HTML代码后和字面量赋值效果相同：
 ```html
 <a class="commit first"></a>
+```
+
+##2.3.6 &Attributes
+Jade提供`&attributes`是为了方便我们将整个对象传递给属性，主要用于为属性整体赋值和将属性穿个Mixin(详见：3.5.3)。
+
+attributes.jade:
+```jade
+- var attributes = {'data-foo': 'bar'};
+div#foo(data-bar="foo")&attributes(attributes)
+```
+attributes.html:
+```html
+<div id="foo" data-bar="foo" data-foo="bar"></div>
 ```
