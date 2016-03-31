@@ -25,7 +25,7 @@ mixin.html:
 下边在列举一个含参的mixin。
 
 mixin.jade
-```
+```jade
 mixin student(name)
   h1 #{name}
 +student("terry")
@@ -35,7 +35,7 @@ mixin.html
 <h1>terry</h1>
 ```
 注意：在调用传入参数时，除了可以使用`#{}`外，还可以直接使用`=`调用，但是左值必须和等号相连，中间不能有任何空格：
-```
+```jade
 mixin student(name)
   h1= name
 +student("terry")
