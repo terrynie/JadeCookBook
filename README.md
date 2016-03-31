@@ -4,6 +4,11 @@ Jade现在来说也不算是一种新技术了，也已经出现几年了，13�
 
 其实Jade官方已经更名为Pug了，不但没有流行开，反倒是现在连Pug的官网都无法打开，所以本书还以Jade为例。
 
+##获取图书
+本书下载地址：[下载 Jade小书(epub/mobi/pdf)](https://www.gitbook.com/book/terrynie/jadecookbook/details)
+
+在线观看：[Jade小书](http://jade.terrynie.com)
+
 ##贡献
 您可以为本书贡献章节，本书已托管在[GitHub](https://github.com/terrynie/JadeCookBook)，您可以Fork至您自己的GitHub账号中进行修改，然后PR。
 
