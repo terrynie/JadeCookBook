@@ -67,4 +67,35 @@ mixinBlock.html:
 详细过程来说就是，当第一次调用时我们只传入了参数title，而并没有传入block，所以第一次调用生成的HTML是前两行。当第二次调用时，我们除了传入了参数title外，还在下边传入了一个blcok。
 
 ##3.5.3 Mixin Attributes
-mixin可以获取一个隐式的atrributes，可以通过这个隐式的attributes对象向mixin中传入
+mixin可以获取一个隐式的atrributes，可以通过这个隐式的attributes对象向mixin中传入属性，并且可以在Mixin中通过attributes过去其属性。
+
+attributes.jade:
+```jade
+mixin addTitle(title)
+	title(class=attributes.class)= title
++addTitle("Demo")(class="test")
+```
+attributes.html:
+```html
+<title class="test">Demo</title>
+```
+这个例子就是给mixin传入了一个class属性为"test"的隐式的attributes，并且在mixin中通过隐式的attributes获取到了这个属性。
+
+而且，我们还可以使用`&attributes`来直接将attributes对象传给mixin，而且事实上`&attributes`在处理这件事情上也是最擅长的。
+
+attributes2.jade:
+
+
+##3.5.4 Rest Arguments
+我们在重用代码时可能会遇到一些问题，比如我们两种标签都有好多个重复的，但是这两种标签数量又不一定一样，而且还可以重用一段代码来生成模板，那么此时我们就可以使用Rest Arguments来达到数量不确定的目的。
+
+rest.jade:
+```jade
+mixin list(id, ...items)
+  ul(id=id)
+    each item in items
+      li= item
+
++list('first', 1, 2, 3, 4)
++list('second',[a,b,c,d])
+```
