@@ -84,6 +84,15 @@ attributes.html:
 而且，我们还可以使用`&attributes`来直接将attributes对象传给mixin，而且事实上`&attributes`在处理这件事情上也是最擅长的。
 
 attributes2.jade:
+```jade
+mixin p(text)
+  p&attributes(attributes)!= text
++p("this is &attributes demo")(id="demo")
+```
+attributes2.html
+```html
+<p id="demo">this is &attributes demo</p>
+```
 
 
 ##3.5.4 Rest Arguments
