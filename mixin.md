@@ -64,4 +64,7 @@ mixinBlock.html:
 <h1>Hello world</h1>
 <p>this is a block</p>
 ```
-详细过程来说就是，当第一次调用时我们只传入了参数title，而并没有传入block，所以第一次调用生成的HTML是前两行。当第二次调用时，我们除了
+详细过程来说就是，当第一次调用时我们只传入了参数title，而并没有传入block，所以第一次调用生成的HTML是前两行。当第二次调用时，我们除了传入了参数title外，还在下边传入了一个blcok。
+
+##3.5.3 Mixin Attributes
+mixin可以获取一个隐式的atrributes，可以通过这个隐式的attributes对象向mixin中传入
