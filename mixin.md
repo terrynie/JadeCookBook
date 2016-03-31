@@ -91,11 +91,27 @@ attributes2.jade:
 
 rest.jade:
 ```jade
-mixin list(id, ...items)
+mixin list(id, items)
   ul(id=id)
     each item in items
       li= item
 
-+list('first', 1, 2, 3, 4)
-+list('second',[a,b,c,d])
++list('first', [1, 2, 3, 4])
++list('second',['a', 'b', 'c', 'd', 'e'])
+```
+rest.html:
+```html
+<ul id="first">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+</ul>
+<ul id="second">
+  <li>a</li>
+  <li>b</li>
+  <li>c</li>
+  <li>d</li>
+  <li>e</li>
+</ul>
 ```
