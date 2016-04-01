@@ -16,5 +16,8 @@ Jade现在来说也不算是一种新技术了，也已经出现几年了，13�
 
 本书部分章节会发布到我的博客中，大家也可以前往我的[博客](http://terrynie.com)查看。
 
+##捐赠
+<img style="width:200px;height:200px" src="http://terry408911.oss-cn-hongkong.aliyuncs.com/images/Screen%20Shot%202016-04-01%20at%2012.30.37%20PM.png">
+
 
 
