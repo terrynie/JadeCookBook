@@ -43,7 +43,7 @@ page.html
 在上例中，在layout.jade中声明了两个block，其中block scripts制定了默认内容，而block content没有指定默认内容。在page.jade中使用extends继承了layout.jade，并且默认覆盖了layout.jade中的block scripts，但是没有指定block content的内容，所以block content中还是layout.jade中的内容。
 
 ##3.1.2 Block Append
-在2.2.1节中说过默认情况下子模板重写父模板中的block是直接覆盖，但是我们有时候需要的不是完全覆盖，二是添加新内容。那么我们就需要用到append和prepend。
+在2.2.1节中说过默认情况下子模板重写父模板中的block是直接覆盖，但是我们有时候需要的不是完全覆盖，而是添加新内容。那么我们就需要用到append和prepend。
 
 append是在父模板中block内容后边追加内容：
 page2.jade
